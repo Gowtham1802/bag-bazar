@@ -1,0 +1,476 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+:root {
+  --clr-oxford-blue: hsla(212, 100%, 17%, 1);
+  --clr-oxford-blue-3: hsla(219, 100%, 10%, 1);
+  --clr-delft-blue: hsla(220, 29%, 28%, 1);
+  --clr-slate-gray: hsla(222, 11%, 54%, 1);
+  --clr-cherry-blossom-pink: hsla(345, 100%, 85%, 1);
+  --clr-bakermiller-pink: hsla(345, 100%, 78%, 1);
+  --clr-russian-violet: hsla(255, 45%, 18%, 1);
+  --clr-lilac: hsla(292, 28%, 68%, 1);
+  --clr-cornsilk: hsla(52, 94%, 94%, 1);
+  --clr-earth-yellow: hsla(32, 65%, 62%, 1);
+  --clr-tigers-eye: hsla(28, 67%, 44%, 1);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(255, 251, 251);
+  /* background-color: aqua; */
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin: 0.5rem 1.5rem; */
+  position: fixed;
+  border: 1px solid rgb(255, 251, 251);
+  padding-bottom: 10px;
+  padding-right: 6.5rem;
+  background-color: rgb(255, 251, 251);
+}
+
+.left-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-side {
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 1rem;
+}
+
+.right-side {
+  margin: 1rem;
+}
+
+.pick {
+  color: var(--clr-oxford-blue);
+  cursor: pointer;
+}
+
+.bazar {
+  color: rgb(56, 158, 56);
+  cursor: pointer;
+}
+
+.products-tag {
+  display: flex;
+  background-color: #fff;
+  border: 1px solid rgb(230, 227, 227);
+  border-radius: 5px;
+  gap: 5px;
+  color: rgb(56, 158, 56);
+  padding: 0.75rem 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.fa-solid.fa-sort-down {
+  margin-left: 30px;
+}
+
+.right-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 33rem;
+  gap: 1rem;
+}
+
+.details {
+  color: black;
+}
+
+.details:hover {
+  color: rgb(2, 165, 165);
+}
+
+.seller {
+  /* padding: 0.5rem 1rem; */
+  width: 10rem;
+  padding: 0.5rem;
+  background-color: rgb(2, 165, 165);
+  border: 1px solid rgb(2, 165, 165);
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.seller:hover {
+  background-color: rgb(4, 139, 139);
+}
+
+.join {
+  padding: 0.5rem 1rem;
+  background-color: rgb(2, 165, 165);
+  border: 1px solid rgb(2, 165, 165);
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.join:hover {
+  background-color: rgb(4, 139, 139);
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 5rem; */
+  background-image: url("../images/bags.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 11rem;
+  /* gap: 0.5rem; */
+  height: 100vh;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.title-description {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.search-container {
+  margin-top: 2.5rem;
+}
+
+.search-input {
+  padding: 1rem 1rem;
+  width: 650px;
+  font-size: 15px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: 1px solid #fff;
+  border: none;
+}
+
+.finding-product {
+  padding: 0.8rem;
+  padding-top: 15px;
+  padding-bottom: 16px;
+  margin-left: -5px;
+  padding-right: 2rem;
+  /* text-align: center; */
+  color: #fff;
+  border: 1px solid rgb(2, 165, 165);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: rgb(2, 165, 165);
+  cursor: pointer;
+}
+
+.finding-product:hover {
+  background-color: rgb(4, 139, 139);
+}
+
+.fa-solid.fa-magnifying-glass {
+  margin-right: 10px;
+  color: #fff;
+}
+
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgb(2, 165, 165);
+  padding: 0.75rem;
+  color: #fff;
+  border-radius: 6px;
+  position: fixed;
+  top: 15rem;
+  right: -3px;
+}
+
+.fa-solid.fa-cart-shopping {
+  margin-right: 10px;
+}
+
+.amount-section {
+  padding: 8px;
+  background-color: #fff;
+  color: rgb(2, 165, 165);
+  border-radius: 6px;
+}
+
+.delivery-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  /* margin: 2.5rem; */
+  border: 1px solid rgb(196, 193, 193);
+  padding: 2rem;
+  margin: auto;
+  width: 100%;
+  border-left: none;
+  border-right: none;
+  background-color: #fff;
+}
+
+.off-one {
+  width: 32%;
+}
+
+.fa-solid.fa-angle-right {
+  background-color: #fff;
+  padding: 0.75rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  box-shadow: 5px 1px 3px linen;
+  margin-left: -40px;
+}
+
+.fa-solid.fa-angle-right:hover {
+  background-color: rgb(4, 139, 139);
+  color: #fff;
+  border: none;
+}
+
+.products-container {
+  display: flex;
+}
+
+.bag-varieties {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+  padding: 2rem;
+  padding-top: 3rem;
+  width: 80%;
+  gap: 2rem;
+  /* padding-top: 3rem; */
+  /* padding-bottom: 20rem; */
+  border: 1px solid rgb(196, 193, 193);
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  background-color: #fff;
+  height: 90vh;
+}
+
+.purse {
+  width: 12%;
+}
+
+.bag {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+  /* position: fixed; */
+}
+
+.bags-container {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  height: 90vh;
+  overflow-y: scroll;
+}
+
+.bag-models {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+  /* align-items: center; */
+  padding: 1rem;
+  padding: 2rem;
+  margin-bottom: -3rem;
+  gap: 1rem;
+  /* width: 100%; */
+}
+
+.bag-models .design {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-self: center;
+}
+
+.bag-style {
+  border-radius: 6px;
+  width: 300px;
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid rgb(196, 193, 193);
+}
+
+/* .bag-styles {
+   background-color: #fff;
+  border: 1px solid rgb(196, 193, 193);
+  
+} */
+.design {
+  /* width: 400px; */
+  cursor: pointer;
+}
+
+.designs {
+  /* width: 50%; */
+}
+
+.cart {
+  width: 40%;
+  color: rgb(2, 165, 165);
+}
+
+.shipping-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: -55px;
+}
+
+.value {
+  color: rgb(2, 165, 165);
+  font-weight: 500;
+}
+
+.orders {
+  display: flex;
+  /* justify-content: flex-end; */
+  align-items: center;
+  gap: 10px;
+  padding: 2px 2px;
+  color: rgb(2, 165, 165);
+  background-color: #fff;
+  border: 1px solid rgb(196, 193, 193);
+  /* margin-left: 8rem; */
+  border-radius: 20px;
+  width: 5.5rem;
+  text-align: center;
+  /* margin-bottom: 15px; */
+}
+
+.orders img {
+  padding-left: 10px;
+}
+
+.orders:hover {
+  background-color: rgb(4, 139, 139);
+  color: #fff;
+  cursor: pointer;
+}
+
+.shipping {
+  font-size: 16px;
+}
+
+.percentage {
+  /* margin-left: 15rem; */
+  display: flex;
+  justify-content: end;
+}
+
+.percentage span {
+  padding: 0.5rem 0.5rem;
+  background-color: var(--clr-tigers-eye);
+  border-radius: 20px;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* .percentages {
+  margin: 1rem;
+  margin-left: 20rem;
+  background-color: var(--clr-tigers-eye);
+  padding: 1rem 0.75rem;
+  font-size: 12px;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+} */
+.brand {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.pieces {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.dummy-value {
+  font-size: 12px;
+  font-weight: 200;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.price {
+  margin-bottom: 40px;
+}
+
+/* .design {
+  width: 30%;
+}
+.cart {
+  width: 5%;
+}
+.bags-container {
+  padding: 2rem;
+  margin: 1rem;
+  background-color: rgb(246, 240, 240);
+}
+.bag-models {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 10px;
+  gap: 10px;
+}
+.bag-style {
+  display: grid;
+  gap: 1rem;
+  background-color: #fff
+} */
